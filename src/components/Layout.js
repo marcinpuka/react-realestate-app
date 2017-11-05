@@ -50,6 +50,12 @@ export default class Layout extends React.Component {
             })
         }
 
+        if(this.state.homeType != 'All'){
+            newData = newData.filter((item)=>{
+                return item.homeType == this.state.homeType;
+            })
+        }
+
         this.setState({
             filteredData: newData
         });

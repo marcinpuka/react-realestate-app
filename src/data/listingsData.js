@@ -24,7 +24,7 @@ var listingsData = [
             'elevator', 
             'gym'
         ], 
-        homeType: 'Apartment', 
+        homeType: 'Room', 
         image: "https://www.adinahotels.com/wp-content/uploads/sites/4/2016/07/adina-melbourne-flinders-street-apartment-hotel-one-and-two-bedroom-apartment-2-2013.jpg"
     },
     {
@@ -68,8 +68,21 @@ var listingsData = [
         ], 
         homeType: 'Apartment', 
         image: "https://cdn.vox-cdn.com/uploads/chorus_asset/file/6652423/mast-des-bg-800.jpg"
+    },
+    {
+        address: '1 Simpson Street', 
+        city: 'Los Angeles', 
+        state: 'CA', 
+        rooms: 1, 
+        price: 600000, 
+        floorSpace: 150, 
+        extras: [
+            'elevator', 
+            'gym'
+        ], 
+        homeType: 'Studio', 
+        image: "http://cdn.home-designing.com/wp-content/uploads/2014/06/black-wall-studio-apartment.jpg"
     }
-
 ]
 
 export default listingsData;
