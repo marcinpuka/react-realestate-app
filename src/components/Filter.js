@@ -13,11 +13,14 @@ export default class Filter extends React.Component {
                 <div className="inside">
                 <h4>Filter</h4>
                 <select name="city" className="filters city" onChange={this.props.change}>
+                    <option value="All">All</option>
                     <option value="Dallas">Dallas</option>
                     <option value="Miami">Miami</option>
                     <option value="Los Angeles">Los Angeles</option>
+                    <option value="Wildwood">Wildwood</option>
                 </select>
                 <select name="homeType" className="filters homeType" onChange={this.props.change}>
+                    <option value="All">All </option>
                     <option value="Ranch">Ranch</option>
                     <option value="Apartment">Apartment</option>
                     <option value="Studio">Studio</option>
