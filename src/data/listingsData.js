@@ -17,7 +17,7 @@ var listingsData = [
         address: '1 Elm Street', 
         city: 'Wildwood', 
         state: 'VA', 
-        rooms: 2, 
+        rooms: 1, 
         price: 150000, 
         floorSpace: 80, 
         extras: [
@@ -44,7 +44,7 @@ var listingsData = [
     {
         address: '14 Brooks Street', 
         city: 'Los Angeles', 
-        state: 'CH', 
+        state: 'CA', 
         rooms: 2, 
         price: 400000, 
         floorSpace: 150, 
@@ -82,7 +82,22 @@ var listingsData = [
         ], 
         homeType: 'Studio', 
         image: "http://cdn.home-designing.com/wp-content/uploads/2014/06/black-wall-studio-apartment.jpg"
+    }, 
+    {
+        address: '54 Garfield Street', 
+        city: 'Santa Fe', 
+        state: 'NM', 
+        rooms: 1, 
+        price: 80000, 
+        floorSpace: 45, 
+        extras: [
+            'elevator', 
+            'gym'
+        ], 
+        homeType: 'Room', 
+        image: "https://media1.popsugar-assets.com/files/thumbor/2Be9idnvLqLcjgnTvwb0ZbFaUlk/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2014/01/29/795/n/1922794/6d205cdd4f08d0b9_thumb_temp_image318133621385492441/i/Studio-Apartment-Ideas.jpg"
     }
+
 ]
 
 export default listingsData;
