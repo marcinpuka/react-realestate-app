@@ -23,11 +23,14 @@ export default class Layout extends React.Component {
             gym: false, 
             filteredData: listingsData, 
             populateFormsData: '', 
-            sortby: 'price-asc'
+            sortby: 'price-asc', 
+            view: 'box', 
+            search: ''
         };
         this.change = this.change.bind(this);
         this.filteredData = this.filteredData.bind(this);
         this.populateForms = this.populateForms.bind(this);
+        this.changeView = this.changeView.bind(this);
     };
     componentWillMount() {
         var listingsData = this.state.listingsData.sort((a, b)=> {
@@ -49,6 +52,12 @@ export default class Layout extends React.Component {
         }, () => {
             console.log(this.state);
             this.filteredData();
+        })
+    }
+
+    changeView(viewName) {
+        this.setState({
+            view: viewName
         })
     }
 
@@ -87,6 +96,18 @@ export default class Layout extends React.Component {
         if(this.state.sortby == 'price-asc'){
             newData = newData.sort( (a, b) => {
                 return a.price - b.price
+            })
+        }
+
+        if(this.state.search != ''){
+            newData = newData.filter((item)=> {
+                var city = item.city.toLowerCase();
+                var searchText = this.state.search.toLowerCase();
+                var n = city.match(searchText);
+
+                if(n != null) {
+                    return true;
+                }
             })
         }
 
@@ -145,7 +166,7 @@ export default class Layout extends React.Component {
                 <Header />
                 <section id="content-area">
                     <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}/>
-                    <Listings listingsData={this.state.filteredData} change={this.change}/>
+                    <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}/>
                 </section>
             </div>
         );

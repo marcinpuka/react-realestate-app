@@ -5,7 +5,7 @@ var listingsData = [
         state: 'NY', 
         rooms: 3, 
         price: 220000, 
-        floorSpace: 120, 
+        floorSpace: 100, 
         extras: [
             'elevator', 
             'gym'
