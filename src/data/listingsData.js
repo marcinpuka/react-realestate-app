@@ -8,7 +8,8 @@ var listingsData = [
         floorSpace: 100, 
         extras: [
             'elevator', 
-            'gym'
+            'gym', 
+            'swimming_pool'
         ], 
         homeType: 'Apartment', 
         image: "https://images1.apartments.com/i2/Uh7pU-5z2gxB-ly2VsPGuVp5gDOYIpjjuekeZ9CA09Y/117/cielo-apartments-charlotte-nc-saltwater-pool-and-courtyard.jpg"
@@ -21,8 +22,6 @@ var listingsData = [
         price: 150000, 
         floorSpace: 80, 
         extras: [
-            'elevator', 
-            'gym'
         ], 
         homeType: 'Room', 
         image: "https://www.adinahotels.com/wp-content/uploads/sites/4/2016/07/adina-melbourne-flinders-street-apartment-hotel-one-and-two-bedroom-apartment-2-2013.jpg"
@@ -35,7 +34,6 @@ var listingsData = [
         price: 220000, 
         floorSpace: 120, 
         extras: [
-            'elevator', 
             'gym'
         ], 
         homeType: 'Apartment', 
@@ -49,8 +47,8 @@ var listingsData = [
         price: 400000, 
         floorSpace: 150, 
         extras: [
-            'elevator', 
-            'gym'
+            'gym', 
+            'finished_basement'
         ], 
         homeType: 'Apartment', 
         image: "https://cdn.vox-cdn.com/uploads/chorus_asset/file/6652423/mast-des-bg-800.jpg"
@@ -64,7 +62,6 @@ var listingsData = [
         floorSpace: 60, 
         extras: [
             'elevator', 
-            'gym'
         ], 
         homeType: 'Apartment', 
         image: "https://cdn.vox-cdn.com/uploads/chorus_asset/file/6652423/mast-des-bg-800.jpg"

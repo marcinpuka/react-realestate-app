@@ -80,7 +80,7 @@ export default class Filter extends React.Component {
                     </span>
                     <label htmlFor="extras">
                         <span> Elevators </span>
-                        <input name="elavator" value="elavator" type="checkbox" onChange={this.props.change}/>
+                        <input name="elevator" value="elevator" type="checkbox" onChange={this.props.change}/>
                     </label>
                     <label htmlFor="extras">
                         <span> Swimming Pool </span>

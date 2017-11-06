@@ -87,6 +87,30 @@ export default class Layout extends React.Component {
             })
         }
 
+        if(this.state.elevator != false) {
+            newData = newData.filter((item)=> {
+                return (item.extras.indexOf('elevator')> -1);
+            })
+        }
+
+        if(this.state.gym != false) {
+            newData = newData.filter((item)=> {
+                return (item.extras.indexOf('gym')> -1);
+            })
+        }
+
+        if(this.state.swimming_pool != false) {
+            newData = newData.filter((item)=> {
+                return (item.extras.indexOf('swimming_pool')> -1);
+            })
+        }
+
+        if(this.state.finished_basement != false) {
+            newData = newData.filter((item)=> {
+                return (item.extras.indexOf('finished_basement')> -1);
+            })
+        }
+
         if(this.state.sortby == 'price-dsc'){
             newData = newData.sort( (a, b) => {
                 return b.price - a.price
