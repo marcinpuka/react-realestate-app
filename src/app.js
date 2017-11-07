@@ -9,5 +9,5 @@ import './styles/styles.scss';
 
 
 
-ReactDOM.render(<Layout />, document.getElementById("app"));
+ReactDOM.render(<Layout />, document.getElementById("real"));
 
