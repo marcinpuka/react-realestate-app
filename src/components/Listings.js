@@ -13,7 +13,7 @@ export default class Listings extends React.Component {
         // console.log("Listings js");
         // console.log(listingsData);
         if (listingsData == undefined || listingsData.length == 0) {
-            return "sorry"
+            return "Sorry no matches found"
         }
 
         return listingsData.map((listing, index) => {

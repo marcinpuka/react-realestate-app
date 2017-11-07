@@ -201,8 +201,8 @@ var listingsData = [
             'elevator', 
             'balcony'
         ], 
-        homeType: 'Studio', 
-        image: "https://www.servicedapartmentsonline.com.au/wp-content/uploads/2017/08/apartment_4.jpg"
+        homeType: 'Studio',
+        image: "https://images1.apartments.com/i2/I4gHvfqJgZT3Qip5gapEjci3kYKXeK6NZjI-6GRoweM/117/plaza-apartments-fresno-ca-building-photo.jpg"
     }, 
     {
         address: 'Neubaugasse 60', 
