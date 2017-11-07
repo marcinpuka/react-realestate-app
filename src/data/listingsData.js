@@ -217,7 +217,7 @@ var listingsData = [
             'garage'
         ], 
         homeType: 'Apartment', 
-        image: "https://www.servicedapartmentsonline.com.au/wp-content/uploads/2017/08/apartment_5.jpg"
+        image: "https://s1.cdn.autoevolution.com/images/news/luxury-skyscraper-allows-residents-to-park-their-car-inside-the-apartment-video-90379-7.jpg"
     },
     {
         address: 'Pfeilgasse 81', 
