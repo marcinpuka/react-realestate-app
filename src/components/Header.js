@@ -10,7 +10,9 @@ export default class Header extends React.Component {
     render () {
         return (
             <header>
-                <div className="logo">Logo</div>
+                <div className="logo">
+                    Vienna Real Estate
+                </div>
 
                 <nav>
                     <a href="#">Create ads</a>
