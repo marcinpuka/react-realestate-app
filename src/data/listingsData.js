@@ -13,7 +13,7 @@ var listingsData = [
             'wardrobe'
         ], 
         homeType: 'Apartment', 
-        image: "https://images1.apartments.com/i2/Uh7pU-5z2gxB-ly2VsPGuVp5gDOYIpjjuekeZ9CA09Y/117/cielo-apartments-charlotte-nc-saltwater-pool-and-courtyard.jpg"
+        image: "https://cdn.homedit.com/wp-content/uploads/2016/10/Penthouse-apartment-in-church-staircase-and-mezzanine.jpg"
     }, 
     {
         address: 'Salavatorgasse 2', 
