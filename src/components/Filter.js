@@ -49,17 +49,17 @@ export default class Filter extends React.Component {
             <section id="filter">
                 <div className="inside">
                 <h4>Filter</h4>
-                <label htmlFor="city">City</label>
+                <label htmlFor="city" className="filters_city">District</label>
                 <select name="city" className="filters city" onChange={this.props.change}>
                     <option value="All">All</option>
                     {this.cities()}
                 </select>
-                <label htmlFor="homeType">Type</label>
+                <label htmlFor="homeType" className="filters_type">Type</label>
                 <select name="homeType" className="filters homeType" onChange={this.props.change}>
                     <option value="All">All </option>
                     {this.homeType()}
                 </select>
-                <label htmlFor="bedrooms">Bedrooms</label>
+                <label htmlFor="bedrooms" className="filters_bedrooms">Bedrooms</label>
                 <select name="bedrooms" className="filters bedrooms" onChange={this.props.change}>
                     <option value="0">Show All</option>
                     {this.bedrooms()}
@@ -79,20 +79,20 @@ export default class Filter extends React.Component {
                         Extras
                     </span>
                     <label htmlFor="extras">
-                        <span> Elevators </span>
+                        <span> Elevator </span>
                         <input name="elevator" value="elevator" type="checkbox" onChange={this.props.change}/>
                     </label>
                     <label htmlFor="extras">
-                        <span> Swimming Pool </span>
-                        <input name="swimming_pool" value="swimming_pool" type="checkbox" onChange={this.props.change}/>
+                        <span> Wardrobe Room </span>
+                        <input name="wardrobe" value="wardrobe" type="checkbox" onChange={this.props.change}/>
                     </label>
                     <label htmlFor="extras">
-                        <span> Finished Basement </span>
-                        <input name="finished_basement" value="finished_basement" type="checkbox"onChange={this.props.change}/>
+                        <span>Balcony </span>
+                        <input name="balcony" value="balcony" type="checkbox"onChange={this.props.change}/>
                     </label>
                     <label htmlFor="extras">
-                        <span> Gym </span>
-                        <input name="gym" value="gym" type="checkbox" onChange={this.props.change}/>
+                        <span> Garage </span>
+                        <input name="garage" value="garage" type="checkbox" onChange={this.props.change}/>
                     </label>
                 </div>
                 </div>

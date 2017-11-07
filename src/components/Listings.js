@@ -10,8 +10,8 @@ export default class Listings extends React.Component {
     };
     loopListings() {
         var { listingsData } = this.props;
-        console.log("Listings js");
-        console.log(listingsData);
+        // console.log("Listings js");
+        // console.log(listingsData);
         if (listingsData == undefined || listingsData.length == 0) {
             return "sorry"
         }
@@ -30,13 +30,12 @@ export default class Listings extends React.Component {
                                 }}>
                                 <span className="address">{listing.address}</span>
                                 <div className="details">
-                                    <div className="col-md-3">
+                  
+                                    <div className="col-md-12">
                                         <div className="user-img"></div>
-                                    </div>
-                                    <div className="col-md-9">
                                         <div className="user-details">
-                                            <span className="user-name">Nina Smith</span>
-                                            <span className="post-date">05/05/2017</span>
+                                            <span className="user-name">Hans Muster</span>
+                                            <span className="post-date">01/01/2017</span>
                                         </div>
                                         <div className="listing-details">
                                             <div className="floor-space">
@@ -47,6 +46,10 @@ export default class Listings extends React.Component {
                                                 <i className="fa fa-bed" aria-hidden="true"></i>
                                                 <span>{listing.rooms} bedrooms</span>
                                             </div>
+                                            <div className="bedrooms">
+                                                 <i class="fa fa-home" aria-hidden="true"></i>
+                                                <span>{listing.homeType} </span>
+                                            </div>
                                         </div>
                                         <div className="view-btn">
                                             View Listing
@@ -55,7 +58,7 @@ export default class Listings extends React.Component {
                                 </div>
                             </div>
                             <div className="bottom-info">
-                                <span className="price"> ${listing.price} </span>
+                                <span className="price"> €{listing.price} </span>
                                 <span className="location"><i className="fa fa-map-marker" aria-hidden="true"></i>
                                     {listing.city}, {listing.state} </span>
                             </div>
@@ -74,13 +77,14 @@ export default class Listings extends React.Component {
                                 }}>
                                 <span className="address">{listing.address}</span>
                                 <div className="details">
-                                    <div className="col-md-3">
+                                
+
+
+                                    <div className="col-md-12">
                                         <div className="user-img"></div>
-                                    </div>
-                                    <div className="col-md-9">
                                         <div className="user-details">
-                                            <span className="user-name">Nina Smith</span>
-                                            <span className="post-date">05/05/2017</span>
+                                            <span className="user-name">Hans Muster</span>
+                                            <span className="post-date">01/01/2017</span>
                                         </div>
                                         <div className="listing-details">
                                             <div className="floor-space">
@@ -91,6 +95,11 @@ export default class Listings extends React.Component {
                                                 <i className="fa fa-bed" aria-hidden="true"></i>
                                                 <span>{listing.rooms} bedrooms</span>
                                             </div>
+                                            <div className="bedrooms">
+                                                 <i class="fa fa-home" aria-hidden="true"></i>
+                                                <span>{listing.homeType} </span>
+                                            </div>
+                                            
                                         </div>
                                         <div className="view-btn">
                                             View Listing
@@ -99,7 +108,7 @@ export default class Listings extends React.Component {
                                 </div>
                             </div>
                             <div className="bottom-info">
-                                <span className="price"> ${listing.price} </span>
+                                <span className="price"> €{listing.price} </span>
                                 <span className="location"><i className="fa fa-map-marker" aria-hidden="true"></i>
                                     {listing.city}, {listing.state} </span>
                             </div>
@@ -124,7 +133,7 @@ export default class Listings extends React.Component {
                         </select>
                         <div className="view">
                             <i className="fa fa-th-list" aria-hidden="true" onClick={this.props.changeView.bind(null, "long")}></i>
-                            <i className="fa fa-th" aria-hidden="true" onClick={this.props.changeView.bind(null, "bix")}></i>
+                            <i className="fa fa-th" aria-hidden="true" onClick={this.props.changeView.bind(null, "box")}></i>
                         </div>
                     </div>
                 </section>

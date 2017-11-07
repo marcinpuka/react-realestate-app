@@ -18,9 +18,9 @@ export default class Layout extends React.Component {
             min_floor_space: 0, 
             max_floor_space: 1000, 
             elevator: false, 
-            swimming_pool: false, 
-            finished_basement: false, 
-            gym: false, 
+            wardrobe: false, 
+            balcony: false, 
+            garage: false, 
             filteredData: listingsData, 
             populateFormsData: '', 
             sortby: 'price-asc', 
@@ -93,21 +93,21 @@ export default class Layout extends React.Component {
             })
         }
 
-        if(this.state.gym != false) {
+        if(this.state.garage != false) {
             newData = newData.filter((item)=> {
-                return (item.extras.indexOf('gym')> -1);
+                return (item.extras.indexOf('garage')> -1);
             })
         }
 
-        if(this.state.swimming_pool != false) {
+        if(this.state.wardrobe != false) {
             newData = newData.filter((item)=> {
-                return (item.extras.indexOf('swimming_pool')> -1);
+                return (item.extras.indexOf('wardrobe')> -1);
             })
         }
 
-        if(this.state.finished_basement != false) {
+        if(this.state.balcony != false) {
             newData = newData.filter((item)=> {
-                return (item.extras.indexOf('finished_basement')> -1);
+                return (item.extras.indexOf('balcony')> -1);
             })
         }
 
@@ -178,13 +178,11 @@ export default class Layout extends React.Component {
                 cities
             }
         }, () => {
-            console.log(this.state);
+           // console.log(this.state);
         })
     }
 
     render () {
-        console.log("render");
-        console.log(this.state.filteredData);
         return (
             <div>
                 <Header />
