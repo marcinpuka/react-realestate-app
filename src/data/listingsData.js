@@ -78,7 +78,7 @@ var listingsData = [
             'gym'
         ], 
         homeType: 'Studio', 
-        image: "http://cdn.home-designing.com/wp-content/uploads/2014/06/black-wall-studio-apartment.jpg"
+        image: "https://i.pinimg.com/736x/57/40/88/57408851e892fa08ff9c78e7243c43ef--facade-design-exterior-design.jpg"
     }, 
     {
         address: '54 Garfield Street', 
