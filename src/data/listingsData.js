@@ -13,7 +13,8 @@ var listingsData = [
             'wardrobe'
         ], 
         homeType: 'Apartment', 
-        image: "../../public/images/bootstrap.jpg"
+        image: "https://cdn.homedit.com/wp-content/uploads/2016/10/Penthouse-apartment-in-church-staircase-and-mezzanine.jpg"
+
     }, 
     {
         address: 'Salavatorgasse 2', 
