@@ -13,7 +13,7 @@ var listingsData = [
             'wardrobe'
         ], 
         homeType: 'Apartment', 
-        image: 'src="../../public/images/bootstrap.jpg"'
+        image: "../../public/images/bootstrap.jpg"
 
     }, 
     {
