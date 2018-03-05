@@ -44,7 +44,7 @@ var listingsData = [
             'wardrobe'
         ], 
         homeType: 'Studio', 
-        image: "https://images1.apartments.com/i2/Uh7pU-5z2gxB-ly2VsPGuVp5gDOYIpjjuekeZ9CA09Y/117/cielo-apartments-charlotte-nc-saltwater-pool-and-courtyard.jpg"
+        image: "../../public/images/bootstrap.jpg"
     }, 
     {
         address: 'Sturggase 1', 
