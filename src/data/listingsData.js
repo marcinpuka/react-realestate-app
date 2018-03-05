@@ -13,7 +13,7 @@ var listingsData = [
             'wardrobe'
         ], 
         homeType: 'Apartment', 
-        image: "https://cdn.homedit.com/wp-content/uploads/2016/10/Penthouse-apartment-in-church-staircase-and-mezzanine.jpg"
+        image: 'src="../../public/images/bootstrap.jpg"'
 
     }, 
     {
